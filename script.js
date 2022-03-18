@@ -30,6 +30,7 @@ async function ieladetChataZinasJson() {
     i = 0;
     while (i < await dati.length) {
         console.log(i);
+        zinas.innerHTML = zinas.innerHTML + dati[i]["zina"];
         i = i + 1;
     }
 }// šeit beidzas 
