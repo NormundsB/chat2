@@ -25,12 +25,16 @@ async function ieladetChataZinasJson() {
     let datiNoServera = await fetch(API + '/lasit');
     let dati = await datiNoServera.json();
 
-    //console.log(await dati[0]["zina"])
+    //console.log(await dati[0]['zina'] )
 
     i = 0;
     while (i < await dati.length) {
         console.log(i);
-        zinas.innerHTML = zinas.innerHTML + dati[i]["zina"];
+        zinas.innerHTML = zinas.innerHTML + dati[i]['zina'];
+
         i = i + 1;
     }
-}// šeit beidzas 
+}//beidzas ieladetChataZinasJson()
+© 2022 GitHub, Inc.
+    Terms
+Privacy

@@ -11,6 +11,7 @@ body
     border: 4px solid rgb(82, 0, 0);
     padding: 10px;
     margin: auto;
+    color:white;
 
     /*zemāk paraugs vertik. un horizont. centrēšanai*/
     /*position: absolute;
@@ -22,13 +23,14 @@ body
     /*border-radius: 10px;*/ /*apaļi stūri*/
     /*box-shadow: 3px 3px 15px#5E0000;*/ /*ēna*/
     /*opacity: 0.5;*/ /*caurspīdīgums*/
-
 }
+
+
 .chataZinas
 {
-    background-color: whitesmoke;
+    background: whitesmoke;
     height: 300px;
     color: red;
     padding: 5px;
-    overflow-y: scroll;
+    overflow: scroll;
 }
