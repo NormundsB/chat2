@@ -25,9 +25,11 @@ async function ieladetChataZinasJson() {
     let datiNoServera = await fetch(API + '/lasit');
     let dati = await datiNoServera.json();
 
+    //console.log(await dati[0]["zina"])
+
     i = 0;
     while (i < await dati.length) {
         console.log(i);
         i = i + 1;
     }
-}
+}// šeit beidzas 
