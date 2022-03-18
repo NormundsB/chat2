@@ -1,6 +1,5 @@
 const API = "https://chat2022.normundsb.repl.co"
 
-
 let zina = document.querySelector('.manaZina');
 let zinas = document.querySelector('.chataZinas');
 let vards = document.querySelector('.vards');
@@ -31,9 +30,13 @@ async function ieladetChataZinasJson() {
 
     i = 0;
     while (i < await dati.length) {
-        console.log(i);
+        //console.log(i);
         zinas.innerHTML = zinas.innerHTML + dati[i]['vards'] + ': ' + dati[i]['zina'] + '<br />';
 
         i = i + 1;
     }
+
+    zinas.scrollTop = zinas.scrollHeight;
 }//beidzas ieladetChataZinasJson()
+
+setInterval(ieladetChataZinasJson, 1000)
