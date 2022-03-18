@@ -1,4 +1,4 @@
-const API = "https://chat2022.normundsb.repl.co/"
+const API = "https://chat2022.normundsb.repl.co"
 let zina = document.querySelector('.manaZina');
 let zinas = document.querySelector('.chataZinas');
 let vards = document.querySelector('.vards');
