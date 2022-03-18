@@ -1,5 +1,6 @@
 const API = "https://chat2022.normundsb.repl.co"
 
+
 let zina = document.querySelector('.manaZina');
 let zinas = document.querySelector('.chataZinas');
 let vards = document.querySelector('.vards');
@@ -26,15 +27,13 @@ async function ieladetChataZinasJson() {
     let dati = await datiNoServera.json();
 
     //console.log(await dati[0]['zina'] )
+    zinas.innerHTML = '';
 
     i = 0;
     while (i < await dati.length) {
         console.log(i);
-        zinas.innerHTML = zinas.innerHTML + dati[i]['zina'];
+        zinas.innerHTML = zinas.innerHTML + dati[i]['vards'] + ': ' + dati[i]['zina'] + '<br />';
 
         i = i + 1;
     }
 }//beidzas ieladetChataZinasJson()
-© 2022 GitHub, Inc.
-    Terms
-Privacy
