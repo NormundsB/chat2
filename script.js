@@ -1,4 +1,4 @@
-const API = "https://chat2022.normundsb.repl.co"
+const API = "https://chat2022.gundegadekena.repl.co"
 
 let zina = document.querySelector('.manaZina');
 let zinas = document.querySelector('.chataZinas');
@@ -31,7 +31,11 @@ async function ieladetChataZinasJson() {
     i = 0;
     while (i < await dati.length) {
         //console.log(i);
-        zinas.innerHTML = zinas.innerHTML + dati[i]['vards'] + ': ' + dati[i]['zina'] + '<br />';
+        let laiks = '[<i>' + '????          ' + '</i>] ';
+        if ("laiks" in dati[i]) {
+            laiks = '[<i>' + dati[i]['laiks'] + '</i>] ';
+        }
+        zinas.innerHTML = zinas.innerHTML + laiks + dati[i]['vards'] + ': ' + dati[i]['zina'] + '<br />';
 
         i = i + 1;
     }
