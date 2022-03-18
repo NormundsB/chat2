@@ -1,1 +1,7 @@
-console.log(1)
+//console.log(2)
+
+function sutitZinu() {
+
+    console.log("sutitZinu() darbojas");
+
+}
